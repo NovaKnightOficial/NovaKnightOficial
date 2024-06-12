@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suscribirse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        .subscribe-button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .subscribe-button:hover {
+            background-color: #45a049;
+        }
+
+        .more-info {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .more-info a {
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s ease;
+        }
+
+        .more-info a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Botón de suscripción -->
+<button class="subscribe-button" onclick="mostrarEnlace()">Suscribirse para ver el enlace</button>
+
+<!-- Enlace oculto -->
+<div id="enlace" style="display: none;">
+    <a href="https://www.youtube.com/channel/UC2at7wNuyhIpO7m4yU1rd6w" target="_blank">¡Canal de YouTube!</a>
+    <div class="more-info">¿Quieres más? <a href="https://t.me/novaknight_OF" target="_blank">Únete a nuestro canal de Telegram</a></div>
+</div>
+
+<script>
+    function mostrarEnlace() {
+        document.getElementById("enlace").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
